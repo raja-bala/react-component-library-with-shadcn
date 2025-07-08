@@ -103,14 +103,22 @@ npm create storybook@latest
 
 - Choose Yes
 
-12. After the StoryBook installation remove all the contents(files and folders) from the src/stories folder
+12. After the StoryBook installation remove all the contents(files and folders) from the `src/stories` folder
 
-13. Add index.ts file in /src/lib/ folder to expose all the component from the libary
+13. Add `index.ts` file in `/src/lib/` folder to expose all the component from the libary
 
 - currently we have only button component from shadcn
-- so add that with the index.css file so that all the css will be export with the libary
+- so add that with the `index.css` file so that all the css will be export with the libary
 
-14. Lets add stories for the Shadcn button component in /src/stories folder
+14. Lets add stories for the Shadcn button component in `/src/stories` folder
 
-15. Also import the index.css in ./storybook/preview.ts file so the css styles will be applied correcly while previewing the storybook
+15. Also import the index.css in `./storybook/preview.ts` file so the css styles will be applied correcly while previewing the storybook
     - run `npm run storybook` to see the preview of the storybook
+
+### Lets do the required steps to build the libary
+
+16. Install vite-plugin-dts
+
+```node
+npm install -D vite-plugin-dts
+```
