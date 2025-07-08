@@ -45,3 +45,9 @@
     // ...
   }
 ```
+
+6. Add the following code to the vite.config.ts so your app can resolve paths without error
+
+```node
+npm install -D @types/node
+```
