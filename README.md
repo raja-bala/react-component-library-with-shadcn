@@ -82,3 +82,12 @@ npx shadcn@latest init
 ```node
 npx shadcn@latest add button
 ```
+
+10. Remove all unncessary files as we are going to build libary
+
+```node
+index.html;
+App.css;
+App.tsx;
+main.tsx;
+```
