@@ -124,3 +124,33 @@ npm install -D vite-plugin-dts
 ```
 
 17. Do the config changes in `vite.config.ts` file
+
+18. Do the config changes in `package.json` file
+
+- change `private` to `false`
+- add these change accoringly based on the name of the libary
+  ```json
+  "main": "./dist/react-component-library-with-shadcn.umd.js",
+  "module": "./dist/react-component-library-with-shadcn.es.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "sideEffects": [
+    "**/*.css",
+    "dist/react-component-library-with-shadcn.css"
+  ],
+  ```
+- change "dependencies": to "peerDependencies":
+- and do `npm run build' to build the libary and verify the build is ok or not
+
+19. Even the build generate all the expected files,
+
+- /dist/react-component-library-with-shadcn.umd.js
+- /dist/react-component-library-with-shadcn.es.js
+- /dist/index.d.ts
+- /dist/react-component-library-with-shadcn.css
+
+  it will through error: Cannot find module '../index.css' or its corresponding type declarations.
+
+  1 import "../index.css";
