@@ -104,3 +104,8 @@ npm create storybook@latest
 - Choose Yes
 
 12. After the StoryBook installation remove all the contents(files and folders) from the src/stories folder
+
+13. Add index.ts file in /src/lib/ folder to expose all the component from the libary
+
+- currently we have only button component from shadcn
+- so add that with the index.css file so that all the css will be export with the libary
