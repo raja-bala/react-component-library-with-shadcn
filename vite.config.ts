@@ -18,7 +18,7 @@ export default defineConfig({
     react(),
     tailwindcss(),
     dts({
-      include: ["src/components", "src/lib"],
+      include: ["src/components", "src/lib", "src/global.d.ts"],
       exclude: ["src/**/*.stories.tsx", "src/**/*.test.tsx"],
       insertTypesEntry: true,
       rollupTypes: true,

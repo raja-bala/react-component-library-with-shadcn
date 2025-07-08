@@ -154,3 +154,36 @@ npm install -D vite-plugin-dts
   it will through error: Cannot find module '../index.css' or its corresponding type declarations.
 
   1 import "../index.css";
+
+20. The above error is thrown because of css files are not allowed while building the libary, let fix this
+
+- let add `global.d.ts`
+- do the config changes in `vite.config.ts` file , "src/global.d.ts" in this line
+  include: ["src/components", "src/lib", "src/global.d.ts"],
+- now there is should not be any error
+
+### Lets publish to local npm registry
+
+```node
+npm publish --registry http://localhost:4873/
+```
+
+### Consume this Libary
+
+- install the libary
+
+```node
+
+npm install --registry http://localhost:4873/ react-component-library-with-shadcn@0.0.0
+
+```
+
+- import the css depenecy in `index.css`
+
+@import "react-component-library/dist/react-component-library-with-shadcn.css";
+
+- import the Button Component
+
+import { Button } from "react-component-library-with-shadcn";
+
+#### Whenever there is a change and before publishing chang the version number in the package.json
