@@ -1,17 +1,17 @@
 {
   "name": "react-component-library-with-shadcn",
   "private": false,
-  "version": "0.0.0",
+  "version": "0.0.2",
   "type": "module",
-  "main": "./dist/react-component-library.umd.js",
-  "module": "./dist/react-component-library.es.js",
+  "main": "./dist/react-component-library-with-shadcn.umd.js",
+  "module": "./dist/react-component-library-with-shadcn.es.js",
   "types": "./dist/index.d.ts",
   "files": [
     "dist"
   ],
   "sideEffects": [
     "**/*.css",
-    "dist/react-component-library.css"
+    "dist/react-component-library-with-shadcn.css"
   ],
   "scripts": {
     "dev": "vite",
