@@ -109,3 +109,8 @@ npm create storybook@latest
 
 - currently we have only button component from shadcn
 - so add that with the index.css file so that all the css will be export with the libary
+
+14. Lets add stories for the Shadcn button component in /src/stories folder
+
+15. Also import the index.css in ./storybook/preview.ts file so the css styles will be applied correcly while previewing the storybook
+    - run `npm run storybook` to see the preview of the storybook
