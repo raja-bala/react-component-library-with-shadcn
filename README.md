@@ -91,3 +91,16 @@ App.css;
 App.tsx;
 main.tsx;
 ```
+
+11. Install StoryBook
+
+```node
+npm create storybook@latest
+```
+
+? New to Storybook? › - Use arrow-keys. Return to submit.
+❯ Yes: Help me with onboarding
+
+- Choose Yes
+
+12. After the StoryBook installation remove all the contents(files and folders) from the src/stories folder
