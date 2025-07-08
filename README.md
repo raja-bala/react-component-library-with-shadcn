@@ -122,3 +122,5 @@ npm create storybook@latest
 ```node
 npm install -D vite-plugin-dts
 ```
+
+17. Do the config changes in `vite.config.ts` file
