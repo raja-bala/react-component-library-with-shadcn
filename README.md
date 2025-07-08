@@ -70,3 +70,9 @@ export default defineConfig({
   },
 });
 ```
+
+8. Run the shadcn init command to setup shadcn
+
+```node
+npx shadcn@latest init
+```
