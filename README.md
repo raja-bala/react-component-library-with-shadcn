@@ -1,6 +1,6 @@
 # React + TypeScript + Vite + Shadcn
 
-## Installation/Setup steps ( follow this page https://ui.shadcn.com/docs/installation/vite until step )
+## Installation/Setup steps ( follow this page https://ui.shadcn.com/docs/installation/vite until step 9)
 
 1. Install Vite + React + TypeScript
 
@@ -75,4 +75,10 @@ export default defineConfig({
 
 ```node
 npx shadcn@latest init
+```
+
+9. For Testing we add few components
+
+```node
+npx shadcn@latest add button
 ```
